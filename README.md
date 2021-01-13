@@ -190,6 +190,8 @@ c.waitKey(0)
 Output:
 ![image](https://user-images.githubusercontent.com/72382689/104434760-768aae00-5540-11eb-9fb3-13910318a046.png)
 
+*******************z
+
 
 
 
