@@ -24,6 +24,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 output:
+![image](https://user-images.githubusercontent.com/72382689/104428384-47bd0980-5539-11eb-8111-1e6a3e9a66ff.png)
 
 
 Program
