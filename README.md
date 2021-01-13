@@ -129,7 +129,31 @@ Output:
 Program 5:
 Write a program to convert color image into different color space.
 
-Description:
+Description:A color space is a specific organization of colors. In combination with color profiling supported by various physical devices, and supports reproducible representations of color -- whether such representation entails an analog or a digital representation.
+
+
+import cv2
+image=cv2.imread("butterfly.jpg")
+cv2.imshow("old",image)
+cv2.waitKey()
+hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+cv2.imshow("HSV",hsv)
+cv2.waitKey(0)
+lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+cv2.imshow("LAB",lab)
+cv2.waitKey(0)
+hls = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
+cv2.imshow("HLS",hls)
+cv2.waitKey(0)
+yuv = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+cv2.imshow("YUV",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+Output:
+
+
 
 
 
