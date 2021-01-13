@@ -1,6 +1,7 @@
 # ip
 
 Program 1.	Develop a program to display grayscale image using read and write operation 
+
 Description:
 Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
 
@@ -31,6 +32,7 @@ output:
 
 
 Program 2:	Develop a program to perform linear transformation image.
+
 Description:
 
 The image of a linear transformation or matrix is the span of the vectors of the linear transformation. (Think of it as what vectors you can get from applying the linear transformation or multiplying the matrix by a vector.) It can be written as Im(A).
@@ -52,7 +54,8 @@ output:
 *************************************************************************************************************************************************************************
 
 Rotation:
-This is because the rotation preserves all angles between the vectors as well as their lengths. ... Thus rotations are an example of a linear transformation by the following theorem gives the matrix of a linear transformation which rotates all vectors through an angle of θ.
+This is because the rotation preserves all angles between the vectors as well as their lengths.
+Thus rotations are an example of a linear transformation by the following theorem gives the matrix of a linear transformation which rotates all vectors through an angle of θ.
 
 import cv2 
 import numpy as np 
@@ -71,9 +74,10 @@ Output:
 ![image](https://user-images.githubusercontent.com/72382689/104430330-645a4100-553b-11eb-947e-9184490c9f07.png)
 *****************************************************************************************************************************************************************************
 
-Program 3:
-Develop a program to find sum and mean of a set of images.
+Program 3:Develop a program to find sum and mean of a set of images.
+
 Description:
+
 Given a List. The task is to find the sum and average of the list. Average of the list is defined as the sum of the elements divided by the number of the elements.
 Mean—often simply called the "average"—is a term used in statistics and data analysis. In addition, it's not unusual to hear the words "mean" or "average" used with the terms "mode," "median," and "range," which are other methods of calculating the patterns and common values in data sets.
 import cv2
@@ -101,6 +105,7 @@ Output:
 
 *************************************************************************************************************************************************************************
 Program 4: Write a program to convert color image into gray scale and binary image
+
 Description:
 
 Color image to Grayscale image
@@ -130,7 +135,9 @@ Program 5:
 Write a program to convert color image into different color space.
 
 Description:A color space is a specific organization of colors. In combination with color profiling supported by various physical devices, and supports reproducible representations of color -- whether such representation entails an analog or a digital representation.
-
+COLOR_BGR2HSV which is used to change BGR image to HSV image.
+COLOR_BGR2LAB which is used to change BGR image to LAB image.
+COLOR_BGR2HLS which is used to change BGR image to HLS image.
 
 import cv2
 image=cv2.imread("butterfly.jpg")
@@ -157,6 +164,11 @@ Output:
 
 
 *********************************************************************************************************************************
+
+Program 6:
+Develop a program to create an image from 2D array.
+
+Description:
 
 
 
