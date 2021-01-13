@@ -200,7 +200,7 @@ Find the sum of the neighborhood values of the matrix.
 
 Description:
 
-Program
+
 import numpy as np
 
 M = [[1, 2, 3],
