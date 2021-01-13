@@ -101,6 +101,25 @@ Output:
 
 *************************************************************************************************************************************************************************
 Program 4: Write a program to convert color image into gray scale and binary image
+Description:
+
+Color image to Grayscale image
+The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. ... In addition, grayscale images are entirely sufficient for many tasks and so there is no need to use more complicated and harder-to-process color images.
+Binary images are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
+
+Program:
+import cv2
+image=cv2.imread("butterfly.jpg")
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+(tresh,blackAndWhiteImage)=cv2.threshold(gray,127,255,cv2.THRESH_BINARY)
+cv2.imshow("gray",gray)
+cv2.imshow("BINARY",blackAndWhiteImage)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+Output:
+
 
 
 
