@@ -26,6 +26,8 @@ cv2.destroyAllWindows()
 output:
 ![image](https://user-images.githubusercontent.com/72382689/104428384-47bd0980-5539-11eb-8111-1e6a3e9a66ff.png)
 
+******************************************************************************************************************************************************************************
+
 
 Program 2:2.	Develop a program to perform linear transformation image.
 The image of a linear transformation or matrix is the span of the vectors of the linear transformation. (Think of it as what vectors you can get from applying the linear transformation or multiplying the matrix by a vector.) It can be written as Im(A).
@@ -40,6 +42,27 @@ c.imshow("Result",nimg)
 c.waitKey(0)
 output:
 ![image](https://user-images.githubusercontent.com/72382689/104428763-b1d5ae80-5539-11eb-9e1e-54fc707a84b5.png)
+
+*************************************************************************************************************************************************************************
+
+Rotation:
+This is because the rotation preserves all angles between the vectors as well as their lengths. ... Thus rotations are an example of a linear transformation by the following theorem gives the matrix of a linear transformation which rotates all vectors through an angle of θ.
+
+import cv2 
+import numpy as np 
+img = cv2.imread('flower.jpg') 
+(rows, cols) = img.shape[:2] 
+M = cv2.getRotationMatrix2D((cols / 2, rows / 2), 120, 1) 
+res = cv2.warpAffine(img, M, (cols, rows)) 
+cv2.imshow('image', img)
+cv2.waitKey(0) 
+cv2.imshow('result',res) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows()
+
+
+Output:
+
 
 
 
