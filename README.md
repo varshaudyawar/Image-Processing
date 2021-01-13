@@ -23,6 +23,7 @@ cv2.imwrite("gray.jpg",grayimg)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
+
 output:
 ![image](https://user-images.githubusercontent.com/72382689/104428384-47bd0980-5539-11eb-8111-1e6a3e9a66ff.png)
 
@@ -40,6 +41,9 @@ c.imshow('image',img)
 nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
 c.imshow("Result",nimg)
 c.waitKey(0)
+
+
+
 output:
 ![image](https://user-images.githubusercontent.com/72382689/104428763-b1d5ae80-5539-11eb-9e1e-54fc707a84b5.png)
 
