@@ -30,7 +30,9 @@ output:
 ******************************************************************************************************************************************************************************
 
 
-Program 2:2.	Develop a program to perform linear transformation image.
+Program 2:	Develop a program to perform linear transformation image.
+Description:
+
 The image of a linear transformation or matrix is the span of the vectors of the linear transformation. (Think of it as what vectors you can get from applying the linear transformation or multiplying the matrix by a vector.) It can be written as Im(A).
 Scaling:Image scaling is the process of resizing a digital image. Scaling down an image makes it smaller while scaling up an image makes it larger. Both raster graphics and vector graphics can be scaled, but they produce different results.
 
@@ -71,6 +73,9 @@ Output:
 
 Program 3:
 Develop a program to find sum and mean of a set of images.
+Description:
+Given a List. The task is to find the sum and average of the list. Average of the list is defined as the sum of the elements divided by the number of the elements.
+Mean—often simply called the "average"—is a term used in statistics and data analysis. In addition, it's not unusual to hear the words "mean" or "average" used with the terms "mode," "median," and "range," which are other methods of calculating the patterns and common values in data sets.
 import cv2
 import os
 path = 'C:\Pictures'
@@ -93,6 +98,9 @@ cv2.waitKey(0)
 
 Output:
 ![image](https://user-images.githubusercontent.com/72382689/104431053-50630f00-553c-11eb-9574-8127cc46b16c.png)
+
+*************************************************************************************************************************************************************************
+Program 4: Write a program to convert color image into gray scale and binary image
 
 
 
