@@ -170,6 +170,25 @@ Develop a program to create an image from 2D array.
 
 Description:
 
+An image is a visual representation of something. ... 1) An image is a picture that has been created or copied and stored in electronic form. An image can be described in terms of vector graphics or raster graphics. An image stored in raster form is sometimes called a bitmap.
+An image is an array, or a matrix, of square pixels (picture elements) arranged in columns and rows. An image — an array or a matrix of pixels arranged in columns and rows. In a (8-bit) greyscale image each picture element has an assigned intensity that ranges from 0 to 255.
+A 2D array has a type such as int[][] or String[][], with two pairs of square brackets. ... The elements of a 2D array are arranged in rows and columns, and the new operator for 2D arrays specifies both the number of rows and the number of columns.
+
+
+import numpy as np
+from PIL import Image
+import cv2 as c 
+array = np.zeros([100, 200, 3], dtype=np.uint8)
+array[:,:100] = [150, 128, 0] #Orange left side
+array[:,100:] = [0, 0, 255]   #Blue right side
+img = Image.fromarray(array)
+img.save('flower.jpg')
+img.show()
+c.waitKey(0)
+
+
+Output:
+![image](https://user-images.githubusercontent.com/72382689/104434760-768aae00-5540-11eb-9fb3-13910318a046.png)
 
 
 
