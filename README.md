@@ -8,6 +8,8 @@ Binary images are images whose pixels have only two possible intensity values. .
 to read an image we use the function cv2.imread().
 to save a image we use cv2.imwrite().
 to destroy all the windows().
+program:
+
 import cv2
 img = cv2.imread('flower.jpg')
 cv2.imshow('Input',img)
@@ -20,4 +22,7 @@ cv2.imshow("Binary Image",bw_img)
 cv2.imwrite("gray.jpg",grayimg)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+output:
+
 
