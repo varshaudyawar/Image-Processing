@@ -33,13 +33,14 @@ output:
 ******************************************************************************************************************************************************************************
 
 
-Program 2:	Develop a program to perform linear transformation image.
+**Program 2:	Develop a program to perform linear transformation image.**
 
-Description:
+**Description:**
 
 The image of a linear transformation or matrix is the span of the vectors of the linear transformation. (Think of it as what vectors you can get from applying the linear transformation or multiplying the matrix by a vector.) It can be written as Im(A).
 Scaling:Image scaling is the process of resizing a digital image. Scaling down an image makes it smaller while scaling up an image makes it larger. Both raster graphics and vector graphics can be scaled, but they produce different results.
 
+```python
 Program:
 import cv2 as c
 img=c.imread("flower.jpg")
@@ -47,10 +48,10 @@ c.imshow('image',img)
 nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
 c.imshow("Result",nimg)
 c.waitKey(0)
+```
 
 
-
-output:
+**output:**
 ![image](https://user-images.githubusercontent.com/72382689/104428763-b1d5ae80-5539-11eb-9e1e-54fc707a84b5.png)
 
 *************************************************************************************************************************************************************************
