@@ -30,7 +30,7 @@ cv2.destroyAllWindows()
 output:
 ![image](https://user-images.githubusercontent.com/72382689/104428384-47bd0980-5539-11eb-8111-1e6a3e9a66ff.png)
 
-**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 **Program 2:	Develop a program to perform linear transformation image.**
 
@@ -53,7 +53,7 @@ c.waitKey(0)
 **output:**
 ![image](https://user-images.githubusercontent.com/72382689/104428763-b1d5ae80-5539-11eb-9e1e-54fc707a84b5.png)
 
-**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 **Rotation:**
 
@@ -79,7 +79,7 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72382689/104430330-645a4100-553b-11eb-947e-9184490c9f07.png)
 
 
-**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 
 **Program 3:Develop a program to find sum and mean of a set of images.**
@@ -111,16 +111,17 @@ cv2.waitKey(0)
 Output:
 ![image](https://user-images.githubusercontent.com/72382689/104431053-50630f00-553c-11eb-9574-8127cc46b16c.png)
 
-*************************************************************************************************************************************************************************
-Program 4: Write a program to convert color image into gray scale and binary image
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Description:
+**Program 4: Write a program to convert color image into gray scale and binary image**
+
+**Description:**
 
 Color image to Grayscale image
 The reason for differentiating such images from any other sort of color image is that less information needs to be provided for each pixel. ... In addition, grayscale images are entirely sufficient for many tasks and so there is no need to use more complicated and harder-to-process color images.
 Binary images are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
 
-Program:
+```python
 import cv2
 image=cv2.imread("butterfly.jpg")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -129,24 +130,27 @@ cv2.imshow("gray",gray)
 cv2.imshow("BINARY",blackAndWhiteImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
-
-Output:
+**Output:**
 
 ![image](https://user-images.githubusercontent.com/72382689/104433027-74275480-553e-11eb-8fa2-66ff5737f5e2.png)
 
 
 
-*********************************************************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Program 5:
-Write a program to convert color image into different color space.
 
-Description:A color space is a specific organization of colors. In combination with color profiling supported by various physical devices, and supports reproducible representations of color -- whether such representation entails an analog or a digital representation.
+**Program 5: Write a program to convert color image into different color space.**
+
+**Description:**
+
+A color space is a specific organization of colors. In combination with color profiling supported by various physical devices, and supports reproducible representations of color -- whether such representation entails an analog or a digital representation.
 COLOR_BGR2HSV which is used to change BGR image to HSV image.
 COLOR_BGR2LAB which is used to change BGR image to LAB image.
 COLOR_BGR2HLS which is used to change BGR image to HLS image.
 
+```python
 import cv2
 image=cv2.imread("butterfly.jpg")
 cv2.imshow("old",image)
@@ -164,25 +168,25 @@ yuv = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
 cv2.imshow("YUV",yuv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
-
-Output:
+**Output:**
 
 ![image](https://user-images.githubusercontent.com/72382689/104434029-9bcaec80-553f-11eb-8095-a1de24232496.png)
 
 
-*********************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Program 6:
-Develop a program to create an image from 2D array.
 
-Description:
+**Program 6: Develop a program to create an image from 2D array.**
+
+**Description:**
 
 An image is a visual representation of something. ... 1) An image is a picture that has been created or copied and stored in electronic form. An image can be described in terms of vector graphics or raster graphics. An image stored in raster form is sometimes called a bitmap.
 An image is an array, or a matrix, of square pixels (picture elements) arranged in columns and rows. An image — an array or a matrix of pixels arranged in columns and rows. In a (8-bit) greyscale image each picture element has an assigned intensity that ranges from 0 to 255.
 A 2D array has a type such as int[][] or String[][], with two pairs of square brackets. ... The elements of a 2D array are arranged in rows and columns, and the new operator for 2D arrays specifies both the number of rows and the number of columns.
 
-
+```python
 import numpy as np
 from PIL import Image
 import cv2 as c 
@@ -193,20 +197,19 @@ img = Image.fromarray(array)
 img.save('flower.jpg')
 img.show()
 c.waitKey(0)
+```
 
-
-Output:
+**Output:**
 ![image](https://user-images.githubusercontent.com/72382689/104434760-768aae00-5540-11eb-9fb3-13910318a046.png)
 
-*********************************************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 
 
-Program 7:
-Find the sum of the neighborhood values of the matrix.
+**Program 7: Find the sum of the neighborhood values of the matrix.**
 
 
-Description:
+**Description:**
 
 ```python
 import numpy as np
@@ -237,7 +240,7 @@ print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 ```
 
-Output:
+**Output:**
 
 
 Original matrix:
@@ -250,9 +253,11 @@ Summed neighbors matrix:
  [17. 31. 19.]]
  
  
- *********************************************************************************************************
-**Program 8:**
-**Find the nieghborhood values of the matrix**
+ **-----------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+**Program 8: Find the nieghborhood values of the matrix**
+
+
 **Description**
 
 
@@ -266,7 +271,7 @@ def neighbors(radius, rowNumber, columnNumber):
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(2, 2, 2)
 ```
-Output:
+**Output:**
 
 initial_array :  [[1 2 5 3]
  [4 5 4 7]
@@ -277,10 +282,12 @@ initial_array :  [[1 2 5 3]
  [0, 9, 6, 1, 0],
  [0, 0, 0, 0, 0]]
  
- *****************************************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
+
  
- **Program 9:**
- **Develop a program to implement negative transformation**
+ **Program 9: Develop a program to implement negative transformation**
+ 
+ 
  **Description**
  
  
@@ -294,14 +301,21 @@ img_neg=255-img
 cv2.imshow('negative',img_neg)
 cv2.waitKey(0)
 ```
-Output:
+
+
+**Output:**
+
 ![image](https://user-images.githubusercontent.com/72382689/105163180-718da780-5ac8-11eb-826e-8dca91e5bc18.png)
 
-*********************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Program 10:
-Develop a program to implement Contrast transformation
-Description:
+
+**Program 10: Develop a program to implement Contrast transformation**
+
+
+**Description:**
+
+
 ```python
 from PIL import Image, ImageEnhance
 im = Image.open(r"flower.jpg")
@@ -310,14 +324,16 @@ im3 = ImageEnhance.Color(im)
 im3.enhance(4.3).show()
 ```
 
-Output:
+**Output:**
 ![image](https://user-images.githubusercontent.com/72382689/105163686-17411680-5ac9-11eb-9f16-9aceb7a13c8f.png)
 
-**************************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Program 11:
-Develop a program to implement Threshold transformation
-Description:
+
+**Program 11: Develop a program to implement Threshold transformation**
+
+
+**Description:**
 
 ```python
 # Python programe to illustrate 
@@ -360,14 +376,15 @@ if cv2.waitKey(0) & 0xff == 27:
 	cv2.destroyAllWindows() 
 ```
 
-Output:
+**Output:**
 ![image](https://user-images.githubusercontent.com/72382689/105164150-a2baa780-5ac9-11eb-8985-164d5ae190e3.png)
 
-****************************************************************************************************************************
-Program 12:
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Develop a program to implement a powerlow transformation.
-Description:
+**Program 12: Develop a program to implement a powerlow transformation.**
+
+
+**Description:**
 
 ```python
 import cv2
@@ -380,10 +397,11 @@ for gamma in [0.1, 0.5, 1.2, 2.2]:
 cv2.waitKey(0)
 ```
 
-Output:
+**Output:**
 
 ![image](https://user-images.githubusercontent.com/72382689/105204613-612e0900-5b6a-11eb-8512-2a3d11c90503.png)
-************************************************************************************************************************
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------**
+
 
 
 
