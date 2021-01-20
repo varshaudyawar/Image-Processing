@@ -289,6 +289,24 @@ img_neg=255-img
 cv2.imshow('negative',img_neg)
 cv2.waitKey(0)
 ```
+Output:
+![image](https://user-images.githubusercontent.com/72382689/105163180-718da780-5ac8-11eb-826e-8dca91e5bc18.png)
+
+*********************************************************************************************************************************
+
+Program 10:
+Develop a program to implement Contrast transformation
+Description:
+```python
+from PIL import Image, ImageEnhance
+im = Image.open(r"flower.jpg")
+im.show()
+im3 = ImageEnhance.Color(im)
+im3.enhance(4.3).show()
+```
+
+Output:
+
 
 
 
