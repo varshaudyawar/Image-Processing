@@ -208,7 +208,7 @@ Find the sum of the neighborhood values of the matrix.
 
 Description:
 
-'''python
+```python
 import numpy as np
 
 M = [[1, 2, 3],
@@ -235,8 +235,7 @@ for i in range(M.shape[0]):
 
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
-
-'''
+```
 
 Output:
 
