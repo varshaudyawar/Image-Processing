@@ -30,8 +30,7 @@ cv2.destroyAllWindows()
 output:
 ![image](https://user-images.githubusercontent.com/72382689/104428384-47bd0980-5539-11eb-8111-1e6a3e9a66ff.png)
 
-******************************************************************************************************************************************************************************
-
+**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
 **Program 2:	Develop a program to perform linear transformation image.**
 
@@ -54,12 +53,15 @@ c.waitKey(0)
 **output:**
 ![image](https://user-images.githubusercontent.com/72382689/104428763-b1d5ae80-5539-11eb-9e1e-54fc707a84b5.png)
 
-*************************************************************************************************************************************************************************
+**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
-Rotation:
+**Rotation:**
+
+
 This is because the rotation preserves all angles between the vectors as well as their lengths.
 Thus rotations are an example of a linear transformation by the following theorem gives the matrix of a linear transformation which rotates all vectors through an angle of θ.
 
+```python
 import cv2 
 import numpy as np 
 img = cv2.imread('flower.jpg') 
@@ -71,15 +73,18 @@ cv2.waitKey(0)
 cv2.imshow('result',res) 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
+```
 
-
-Output:
+**Output:**
 ![image](https://user-images.githubusercontent.com/72382689/104430330-645a4100-553b-11eb-947e-9184490c9f07.png)
-*****************************************************************************************************************************************************************************
 
-Program 3:Develop a program to find sum and mean of a set of images.
 
-Description:
+**--------------------------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+
+**Program 3:Develop a program to find sum and mean of a set of images.**
+
+**Description:**
 
 Given a List. The task is to find the sum and average of the list. Average of the list is defined as the sum of the elements divided by the number of the elements.
 Mean—often simply called the "average"—is a term used in statistics and data analysis. In addition, it's not unusual to hear the words "mean" or "average" used with the terms "mode," "median," and "range," which are other methods of calculating the patterns and common values in data sets.
