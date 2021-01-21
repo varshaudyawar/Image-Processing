@@ -287,6 +287,7 @@ initial_array :  [[1 2 5 3]
 
 **Description**
 
+```cpp
 #include <iostream>
 using namespace std;
 class matrix
@@ -399,7 +400,7 @@ int main()
  p * q;
 return 0;
 }
-
+```
 
 **Output**
 
