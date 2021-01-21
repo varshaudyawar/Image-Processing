@@ -13,18 +13,15 @@ to destroy all the windows().
 program:
 
 ```python
+import numpy as np
 import cv2
-img = cv2.imread('flower.jpg')
-cv2.imshow('Input',img)
-cv2.waitKey(0)
-grayimg=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-cv2.imshow('Grayscaleimage',grayimg)
-cv2.waitKey(0)
-ret, bw_img = cv2.threshold(img,127,255, cv2.THRESH_BINARY)
-cv2.imshow("Binary Image",bw_img)
-cv2.imwrite("gray.jpg",grayimg)
+image=cv2.imread('flower.jpg',0)
+cv2.imshow('Original',image)
+image=cv2.imread('flower.jpg')
+cv2.imshow('Gray',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+cv2.imwrite("grayscale.png",image)
 ```
 
 output:
@@ -51,7 +48,8 @@ c.waitKey(0)
 
 
 **output:**
-![image](https://user-images.githubusercontent.com/72382689/104428763-b1d5ae80-5539-11eb-9e1e-54fc707a84b5.png)
+![image](https://user-images.githubusercontent.com/72382689/105327864-48cae800-5b84-11eb-9e90-f3b1a8683de8.png)
+
 
 **------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
