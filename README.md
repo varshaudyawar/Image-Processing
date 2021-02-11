@@ -86,6 +86,7 @@ cv2.destroyAllWindows()
 
 Given a List. The task is to find the sum and average of the list. Average of the list is defined as the sum of the elements divided by the number of the elements.
 Mean—often simply called the "average"—is a term used in statistics and data analysis. In addition, it's not unusual to hear the words "mean" or "average" used with the terms "mode," "median," and "range," which are other methods of calculating the patterns and common values in data sets.
+```python
 import cv2
 import os
 path = 'C:\Pictures'
@@ -105,8 +106,8 @@ cv2.imshow("sum of four pictures",im)
 meanImg = im/len(files)
 cv2.imshow("mean of four pictures",meanImg)
 cv2.waitKey(0)
-
-Output:
+```
+***Output:***
 ![image](https://user-images.githubusercontent.com/72382689/104431053-50630f00-553c-11eb-9574-8127cc46b16c.png)
 
 **-----------------------------------------------------------------------------------------------------------------------------------------------------------**
