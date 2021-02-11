@@ -583,7 +583,7 @@ cv2.destroyAll()
 ```
 
 **Output:**
-
+![image](https://user-images.githubusercontent.com/72382689/107620830-56532980-6c7b-11eb-892f-ab4da8045b3d.png)
 
 
 
