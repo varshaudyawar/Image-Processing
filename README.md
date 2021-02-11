@@ -546,3 +546,45 @@ cv2.waitKey(0)
 
 ![image](https://user-images.githubusercontent.com/72382689/105204613-612e0900-5b6a-11eb-8512-2a3d11c90503.png)
 **-----------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+**Program 14: Program to enhance image using image arithmatic and logic operations**
+
+
+**Description:**
+
+
+```python
+# Python programe to illustrate 
+# arithmetic operation of 
+# addition of two images 
+	
+# organizing imports 
+import cv2 
+import numpy as np 
+	
+# path to input images are specified and 
+# images are loaded with imread command 
+image1 = cv2.imread('input1.jpg') 
+image2 = cv2.imread('input2.jpg') 
+cv2.imshow("Original1",image1)
+cv2.imshow("Original2",image2)
+# cv2.addWeighted is applied over the 
+# image inputs with applied parameters 
+weightedSum = cv2.add(image1,image2) 
+
+# the window showing output image 
+# with the weighted sum 
+cv2.imshow('Weighted Image', weightedSum) 
+sub = cv2.subtract(image1, image2)
+cv2.imshow('Subtracted Image', sub) 
+# De-allocate any associated memory usage 
+cv2.waitKey(0)
+cv2.destroyAll()
+```
+
+**Output:**
+
+
+
+
+
